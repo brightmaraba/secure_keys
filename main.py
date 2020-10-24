@@ -1,12 +1,13 @@
 import os
 import tweepy
 import pandas as pd
+from dotenv import load_dotenv
 
 # Set API Keys required to access Twitter
 
-consumer_key = "sdfalkhjglshg234234325"
-consumer_secret = "3492375iuoahdoavoa"
-access_token = "sadfgagdsaghkhlaf"
-access_token_secret = "fdadfha323232"
+load_dotenv()
+consumer_key = os.getenv('consumer_key')
+consumer_secret = os.getenv('consumer_secret')
+access_token = os.getenv('access_token')
+access_secret = os.getenv('access_secret')
 
-#! All above are fake keys for demonstration.
